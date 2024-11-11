@@ -1,42 +1,139 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@font-face {
+  font-family: 'Chantilly';
+  src: url('./fonts/ChantillyLight.woff2') format('woff2'),
+      url('./fonts/ChantillyLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html, body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+html{
+  background: black;
+}
+body{
+  color: black;
+  margin: auto;
+  background: white;
+  max-width: 1561px;
+  padding: 110px;
+  padding-left: 86px;
+  padding-bottom: 0;
+  font-family: "Nunito Sans", sans-serif;
+  border-left: 11px solid lightgray
+}
+/* header, main, footer{
+  padding: 1rem 2rem;
+} */
+.title{
+  font-family: "Chantilly", sans-serif;
+  color: #DF4339;
+  font-size: 9.5em;
+  font-weight:100;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.subtitle{
+  font-size: 3.1em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+nav{
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding:0;
+  justify-content: space-between;
+}
+nav ul a{
+  text-decoration: none;
+}
+header > nav ul a{
+  font-size: 2.5em;
+  color: #808080;
 }
 
-.card {
-  padding: 2em;
+footer > nav ul a{
+  text-decoration: none;
+  color: #DF4339;
+  font-size: 2.2em;
 }
 
-.read-the-docs {
-  color: #888;
+
+header li{
+  border-bottom: 4px solid #D3D3D3;
+}
+
+article{
+  margin: 7rem 0;
+  border-bottom: 1px solid lightgray;
+}
+
+article > p {
+  color: #415E5E;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 400;
+  font-size: 2.037rem;
+  line-height: 1.75em;
+}
+
+article > p::first-letter{
+  color: #808080;
+  float: left;
+  line-height: 1.75em;
+  margin-top: -5.7rem;
+  margin-left: -0.5rem;
+  margin-right: 1.75rem;
+  margin-bottom: -5.85rem;
+  font-size: 7.2em;
+}
+
+article > h2{
+  margin: 0;
+
+  font-size: 5.5em;
+  font-weight: 300;
+}
+
+article > img{
+  width: 100%;
+}
+
+article > div{
+  width: fit-content;
+  
+  font-size: 2.35em;
+  margin: 4rem 0;
+  margin-left: auto;
+}
+article > div > a{
+  
+  color: #DF4339;
+  
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+date{
+  color: #808080;
+  font-size: 3.2rem;
+}
+
+
+footer > span{
+  font-size: 2em;
+  color: #808080;
 }
